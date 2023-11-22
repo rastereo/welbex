@@ -1,0 +1,9 @@
+.test {
+  width: 100%;
+  /* padding: 100px; */
+  display: flex;
+  gap: 40px;
+}
+
+
+
