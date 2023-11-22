@@ -1,9 +1,8 @@
 @import url(./vendor/normalize.css);
-@import url(./vendor/variables/variables.css);
 @import url(./vendor/fonts/fonts.css);
+@import url(./vendor/variables/variables.css);
 
 :root {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
@@ -16,7 +15,6 @@
   text-rendering: optimizeLegibility;
 
   max-width: 1440px;
-  /* height: 100vh; */
 
   margin: 0 auto;
 
@@ -25,7 +23,7 @@
 }
 
 body {
-  /* height: 100vh; */
+  padding: 57px 150px 20px;
   position: relative;
 }
 
@@ -56,6 +54,27 @@ body::after {
   filter: blur(196px);
 }
 
-/* * {
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: var(--light-text);
+  margin: 0;
+  padding: 0;
+  transition: opacity linear .5s;
+}
+
+.link:hover {
+  opacity: .7;
+}
+
+/* *,
+*::before,
+*::after {
   outline: 2px solid red;
 } */

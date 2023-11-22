@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header__wrapper {
+  width: 140px;
+  height: 24px;
+  position: relative;
+  margin-right: 52px;
+}
+
+.header__wrapper::before {
+  content: "крупный интегратор CRM в России и ещё 8 странах";
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1;
+  position: absolute;
+  bottom: -30px;
+}
+
+.header__logo {
+  display: block;
+}
