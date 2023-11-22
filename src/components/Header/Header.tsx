@@ -3,6 +3,8 @@ import Navigation from '../Navigation/Navigation';
 import Logo from '../../assets/logo-welbex.svg';
 import Contacts from '../Contacts/Contacts';
 
+import { headerMenuItemList } from '../../utils/navigationItemListConstats';
+
 function Header() {
   return (
     <header className="header">
@@ -13,7 +15,7 @@ function Header() {
           className="header__logo"
         />
       </div>
-      <Navigation />
+      <Navigation menuItemList={headerMenuItemList} />
       <Contacts />
     </header>
   );

@@ -1,49 +1,26 @@
 import './Navigation.css';
 
-function Navigation() {
+import { IMenuItemList } from '../../utils/navigationItemListConstats';
+
+interface IMenuItemListProps {
+  menuItemList: IMenuItemList[],
+  isFooter?: boolean,
+}
+
+function Navigation({ menuItemList, isFooter }: IMenuItemListProps) {
   return (
     <nav className="navigation">
-      <ul className="navigation__menu list">
-        <li>
-          <a
-            href="#"
-            className="navigation__link link"
-          >
-            Услуги
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            className="navigation__link link"
-          >
-            Виджеты
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            className="navigation__link link"
-          >
-            Интеграции
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            className="navigation__link link"
-          >
-            Кейсы
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            className="navigation__link link"
-          >
-            Сертификаты
-          </a>
-        </li>
+      <ul className={`navigation__menu list ${isFooter && 'navigation__menu_position_column'}`}>
+        {menuItemList.map(({ name, path }, index) => (
+          <li key={index}>
+            <a
+              href={path}
+              className="link"
+            >
+              {name}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );

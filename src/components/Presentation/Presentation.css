@@ -1,0 +1,116 @@
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 147px 124px 148px;
+}
+
+.presentation__description {
+  max-width: 362px;
+}
+
+.presentation__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding-bottom: 31px;
+}
+
+.presentation__gradient {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.presentation__gradient_size_big {
+  background-image: linear-gradient(to right, #FCB045 40%, #FF3F78);
+  font-weight: 900;
+}
+
+.presentation__gradient_size_small {
+  background-image: linear-gradient(to right, #FCB045 5%, #FD1D1D 43%, #FCB045 0%, #FD1D1D);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+}
+
+.presentation__develop {
+  max-width: 275px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.presentation__present {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  padding-top: 16px;
+}
+
+.presentation__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  padding-right: 2px;
+  padding-bottom: 42px;
+}
+
+.presentation__gift-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 32px 29px;
+  padding: 0 0 63px;
+}
+
+.presentation__item {
+  max-width: 138px;
+}
+
+.presentation__gift {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: .9px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 6px;
+}
+
+.presentation__text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.presentation__button {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  color: var(--light-text);
+  background-color: var(--blue);
+  padding: 20px 33px 21px 35px;
+  margin-right: 3px;
+  cursor: pointer;
+  transition: opacity linear .5s
+}
+
+.presentation__button:hover {
+  opacity: .7;
+}

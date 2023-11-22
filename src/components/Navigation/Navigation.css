@@ -4,13 +4,23 @@
 }
 
 .navigation__menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 30px;
-}
-
-.navigation__link {
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1;
+  line-height: normal;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 31px;
+  padding: 0 0 1px;
+}
+
+.navigation__menu li {
+  max-width: inherit;
+}
+
+.navigation__menu_position_column {
+  height: 140px;
+  font-weight: 400;
+  flex-direction: column;
+  gap: 9px 53px;
 }

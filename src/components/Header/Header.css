@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding: 57px 148px 128px 150px;
 }
 
 .header__wrapper {
@@ -16,9 +17,10 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.2;
   position: absolute;
-  bottom: -30px;
+  bottom: -35px;
+  left: .5px;
 }
 
 .header__logo {

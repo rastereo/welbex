@@ -1,18 +1,29 @@
+/** Montserrat **/
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("./Montserrat/Montserrat-Light.ttf") format("truetype");
+  src: url("../../assets/Montserrat/Montserrat-Light.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../assets/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+/** Inter **/
 
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("./Inter/Inter-Regular.woff2") format("woff2"),
-    url("./Inter/Inter-Regular.ttf") format("truetype");
+  src: url("../../assets/Inter/Inter-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -20,8 +31,15 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("./Inter/Inter-Medium.woff2") format("woff2"),
-    url("./Inter/Inter-Medium.ttf") format("truetype");
+  src: url("../../assets/Inter/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../assets/Inter/Inter-Bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -29,6 +47,5 @@
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url("./Inter/Inter-Black.woff2") format("woff2"),
-    url("./Inter/Inter-Black.ttf") format("truetype");
+  src: url("../../assets/Inter/Inter-Black.ttf") format("truetype");
 }

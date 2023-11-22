@@ -2,21 +2,50 @@
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1;
+  line-height: normal;
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
   gap: 10px 30px;
   flex-wrap: wrap;
   z-index: 1;
+  padding: 0;
+}
+
+.contacts_position_footer {
+  max-width: 280px;
+  gap: 20px 10px;
+}
+
+.contacts__item {
+  padding-right: 17px;
+  padding-bottom: 1px;
+}
+
+.contacts__item_position_footer {
+  padding: 0;
 }
 
 .contacts__phone {
   display: block;
-  width: 143px;
+}
+
+.contacts__item_position_footer {
+  width: 100%;
+  text-align: right;
 }
 
 .contacts__icon {
   display: block;
   width: 20px;
   height: 20px;
+  padding-bottom: 1px;
+}
+
+.contacts__address {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: right;
+  margin: 0;
 }
