@@ -1,9 +1,9 @@
 import './Header.css';
+
 import Navigation from '../Navigation/Navigation';
 import Logo from '../../assets/logo-welbex.svg';
 import Contacts from '../Contacts/Contacts';
-
-import { headerMenuItemList } from '../../utils/navigationItemListConstats';
+import Balls from '../Balls/Balls';
 
 function Header() {
   return (
@@ -15,8 +15,9 @@ function Header() {
           className="header__logo"
         />
       </div>
-      <Navigation menuItemList={headerMenuItemList} />
+      <Navigation />
       <Contacts />
+      <Balls />
     </header>
   );
 }

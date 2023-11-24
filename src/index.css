@@ -3,16 +3,15 @@
 @import url(./vendor/variables/variables.css);
 
 :root {
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
 
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
+  font-synthesis: none;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   max-width: 1440px;
 
@@ -22,37 +21,6 @@
   background-color: var(--black);
 }
 
-body {
-  position: relative;
-}
-
-body::before {
-  content: '';
-  width: 311px;
-  height: 311px;
-  top: 251px;
-  left: -102px;
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.5;
-  background: #961A1A;
-  filter: blur(196px);
-}
-
-body::after {
-  content: '';
-  width: 259px;
-  height: 259px;
-  top: -154px;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.5;
-  background: #833AB4;
-  filter: blur(196px);
-}
-
 .list {
   list-style: none;
   margin: 0;
@@ -60,7 +28,6 @@ body::after {
 
 .link {
   width: 100%;
-  font-family: 'Inter', sans-serif;
   text-decoration: none;
   color: var(--light-text);
   margin: 0;
@@ -71,9 +38,3 @@ body::after {
 .link:hover {
   opacity: .7;
 }
-
-/* *,
-*::before,
-*::after {
-  outline: 2px solid red;
-} */

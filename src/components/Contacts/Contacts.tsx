@@ -56,7 +56,7 @@ function Contacts({ isFooter }: IContactsProps) {
         </a>
       </li>
       {isFooter && (
-        <li>
+        <li className={`contacts__item ${isFooter && 'contacts__item_position_footer'}`}>
           <p className="contacts__address">Москва, Путевой проезд 3с1, к 902</p>
         </li>
       )}

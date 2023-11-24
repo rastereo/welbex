@@ -2,7 +2,7 @@ import './Presentation.css';
 
 function Presentation() {
   return (
-    <main className="presentation">
+    <section className="presentation">
       <div className="presentation__description">
         <h1 className="presentation__title">
           Зарабатывайте больше
@@ -59,6 +59,28 @@ function Presentation() {
             </p>
           </li>
         </ul>
+        <ul className="presentation__mobile-gift-list list">
+          <li>
+            <h3 className="presentation__mobile-gift">
+              Skype Аудит
+            </h3>
+          </li>
+          <li>
+            <h3 className="presentation__mobile-gift">
+              30 виджетов
+            </h3>
+          </li>
+          <li>
+            <h3 className="presentation__mobile-gift">
+              Dashboard
+            </h3>
+          </li>
+          <li>
+            <h3 className="presentation__mobile-gift">
+              Месяц аmoCRM
+            </h3>
+          </li>
+        </ul>
         <button
           type="button"
           className="presentation__button"
@@ -66,7 +88,7 @@ function Presentation() {
           Получить консультацию
         </button>
       </div>
-    </main>
+    </section>
   );
 }
 

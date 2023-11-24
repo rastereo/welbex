@@ -1,8 +1,41 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   padding: 57px 148px 128px 150px;
+  position: relative;
+}
+
+@media screen and (max-width: 1305px) {
+  .header {
+    padding: 57px 20px 128px 20px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .header {
+    padding: 20px 17px 20px 16px;
+  }
+}
+
+.header::after {
+  content: '';
+  width: 259px;
+  height: 259px;
+  top: -154px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+  background: #833AB4;
+  filter: blur(196px);
+}
+
+@media screen and (max-width: 837px) {
+  .header::after {
+    display: none;
+  }
 }
 
 .header__wrapper {
@@ -12,9 +45,27 @@
   margin-right: 52px;
 }
 
+@media screen and (max-width: 1044px) {
+  .header__wrapper {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 837px) {
+  .header__wrapper {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .header__wrapper {
+    display: none;
+  }
+}
+
 .header__wrapper::before {
   content: "крупный интегратор CRM в России и ещё 8 странах";
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-size: 10px;
   font-weight: 300;
   line-height: 1.2;

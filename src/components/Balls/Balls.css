@@ -1,5 +1,6 @@
 .balls {
   width: 28.5%;
+  max-width: 410px;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -7,6 +8,20 @@
   left: 36%;
   z-index: -2;
 }
+
+@media screen and (max-width: 800px) {
+  .balls {
+    width: 70%;
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .balls {
+    display: none;
+  }
+}
+
 
 .balls__item {
   border-radius: 50%;
